@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Zen+Loop:ital@0;1&display=swap');
+@layer base {
+
+
+  h1 {
+    @apply text-6xl 
+  }
+  h2 {
+    @apply text-5xl
+  }
+  
+  h3 {
+    @apply text-4xl
+  }
+  h4 {
+    @apply text-3xl
+  }
+ 
+  .txt-60 {
+    @apply md:text-6xl
+    sm:text-[4vw]
+    text-[10vw]
+  }
+
+  .txt-72 {
+    @apply md:text-7xl
+    sm:text-[12vw]
+    text-[10vw]
+  }
+
+  .txt-32 {
+    @apply md:text-3xl
+    sm:text-[5vw]
+    text-[5vw]
+  }
+
+  .btnPrimary {
+    @apply px-5 py-3 bg-slate-800 text-white
+  }
+
+}
