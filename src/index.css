@@ -23,7 +23,7 @@
  
   .txt-60 {
     @apply md:text-6xl
-    sm:text-[4vw]
+    sm:text-[10vw]
     text-[10vw]
   }
 
@@ -41,6 +41,10 @@
 
   .btnPrimary {
     @apply px-5 py-3 bg-slate-800 text-white
+  }
+
+  .inp-default {
+    @apply border-b-[0.2px] p-2 text-center border-black border-opacity-20 resize-none
   }
 
 }

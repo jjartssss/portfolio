@@ -20,7 +20,7 @@ const Home = () => {
             </div>
         </div>
         <div className='flex justify-center w-full h-auto'>
-            <div className='flex mt-16 md:mt-[12vh] justify-center md:justify-end w-[90%] 3xl:w-[1500px]'>
+            <div className='flex mt-16 md:mt-[7rem] justify-center md:justify-end w-[90%] 3xl:w-[1500px]'>
                 <img src={Glors} className='relative w-[32rem]' />
             </div>
         </div>
