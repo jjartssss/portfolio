@@ -18,7 +18,7 @@ import AB4 from '../assets/imgs/ab4.png'
 import AB5 from '../assets/imgs/ab5.png'
 import AB6 from '../assets/imgs/ab6.png'
 import SmallCardImage from '../components/SmallCardImage'
-
+import { motion } from "framer-motion"
 const AboutMe = () => {
 
     const LogoList = [
@@ -44,9 +44,9 @@ const AboutMe = () => {
 
   return (
     <div className='flex flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
-        <h2 className='text-center md:text-left amatic-sc-bold txt-72 mb-5'>About Me</h2>
-        <p className='zen-loop-regular text-center w-[80%] md:w-[60%] mt-5 txt-32'>I'm passionate about bringing ideas to life through animation, illustration, and web design. I use tools like Adobe Animate, Toon Boom Harmony, Photoshop, After Effects, and Premiere to create engaging animations. For illustrations, Medibang Paint Pro is my go-to.</p>
-        <p className='zen-loop-regular text-center w-[80%] md:w-[60%] mt-5 txt-32'>In web development, I build dynamic websites with React.js, focusing on user-friendly and visually appealing designs. Occasionally, I also dive into game development, blending my animation and coding skills to create interactive experiences.</p>
+        <motion.h2 initial={{opacity: 0}} transition={{duration: 1}} whileInView={{opacity: 100}} viewport={{once: true}} className='text-center md:text-left amatic-sc-bold txt-72 mb-5'>About Me</motion.h2>
+        <motion.p initial={{opacity: 0}} transition={{duration: 1.5}} whileInView={{opacity: 100}} viewport={{once: true}} className='zen-loop-regular text-center w-[80%] md:w-[60%] mt-5 txt-32'>I'm passionate about bringing ideas to life through animation, illustration, and web design. I use tools like Adobe Animate, Toon Boom Harmony, Photoshop, After Effects, and Premiere to create engaging animations. For illustrations, Medibang Paint Pro is my go-to.</motion.p>
+        <motion.p initial={{opacity: 0}} transition={{duration: 2}} whileInView={{opacity: 100}} viewport={{once: true}} className='zen-loop-regular text-center w-[80%] md:w-[60%] mt-5 txt-32'>In web development, I build dynamic websites with React.js, focusing on user-friendly and visually appealing designs. Occasionally, I also dive into game development, blending my animation and coding skills to create interactive experiences.</motion.p>
 
         {/* Logos  */}
         <div className='flex overflow-hidden gap-x-3 gap-y-3 md:gap-x-5 justify-center w-full flex-wrap mt-16 h-fit'>

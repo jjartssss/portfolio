@@ -8,7 +8,7 @@ import AB6 from '../assets/imgs/ab6.png'
 import SmallCardImage from '../components/SmallCardImage'
 import BigCardImage from '../components/BigCardImage'
 import Photobash from '../assets/imgs/photobashing.png'
-
+import { motion } from "framer-motion"
 const Projects = () => {
 
     const ImageCarousel = [
@@ -28,7 +28,7 @@ const Projects = () => {
             </div>  
 
             {/* List of what I Like  */}
-            <div className='flex flex-col justify-center md:justify-start col-span-1 items-start md:items-start md:col-span-3 py-5 md:p-16'>
+            <motion.div initial={{opacity: 0}} transition={{duration: 1}} whileInView={{opacity: 100}} viewport={{once: true}} className='flex flex-col justify-center md:justify-start col-span-1 items-start md:items-start md:col-span-3 py-5 md:p-16'>
                 <h2 className='text-center md:text-left w-[100%] md:w-[80%]  amatic-sc-bold txt-72 mb-5'>Projects</h2>
                 <p className='zen-loop-regular text-center md:text-left w-[100%] md:w-[80%] mt-5 txt-32'>Welcome to my project showcase! Here, you'll find a mix of my favorite works in animation, web development, game dev, and more.</p>
                 <p className='zen-loop-regular text-center md:text-left w-[100%] md:w-[80%] mt-5 txt-32'>I bring stories to life with dynamic animations using tools like Adobe Animate, Toon Boom Harmony, Photoshop, After Effects, and Premiere.</p>
@@ -42,7 +42,7 @@ const Projects = () => {
                         ))
                     }
                 </div>
-            </div>  
+            </motion.div>  
         </div>
     </div>
   )
