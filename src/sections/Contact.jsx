@@ -4,7 +4,7 @@ import Julieta from '../assets/imgs/contact_image1.png'
 import {motion} from 'framer-motion'
 const Contact = () => {
   return (
-    <div className='overflow-hidden flex md:flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
+    <section id='contact' className='overflow-hidden flex md:flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
         <div className='justify-center flex flex-col md:flex-row w-full h-fit md:h-full 5xl:w-[1950px]'>
             {/* Logos  */}
             <div className='z-20 -mb-20 md:-mb-0 md:z-0 w-full md:w-1/2 h-full flex justify-start md:justify-center items-start'>
@@ -28,7 +28,7 @@ const Contact = () => {
                 <motion.img initial={{x: 100}} transition={{duration: 1}} whileInView={{x: 0}} viewport={{once: true}} src={Julieta} className='max-w-[500px] drop-shadow-xl object-contain object-right h-full w-1/2 md:w-full ' />
             </div>  
         </div>
-    </div>
+    </section>
   )
 }
 

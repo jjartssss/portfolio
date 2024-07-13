@@ -19,7 +19,7 @@ const Projects = () => {
 
 
   return (
-    <div className='flex flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
+    <section id='projects' className='flex flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
         
         <div className='grid grid-rows-2 md:grid-rows-1 grid-cols-1 md:grid-cols-5 w-full h-full 5xl:w-[1950px]'>
             {/* Logos  */}
@@ -44,7 +44,7 @@ const Projects = () => {
                 </div>
             </motion.div>  
         </div>
-    </div>
+    </section>
   )
 }
 

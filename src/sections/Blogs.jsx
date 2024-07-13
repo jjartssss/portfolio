@@ -15,7 +15,7 @@ const Blogs = () => {
     ]
 
   return (
-    <div className='flex flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
+    <section id='blogs' className='flex flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
         <div className='grid grid-rows-1 md:grid-rows-1 grid-cols-1 md:grid-cols-5 w-full h-fit md:h-full 5xl:w-[1950px]'>
             {/* Logos  */}
             <motion.div initial={{opacity: 0}} transition={{duration: 1}} whileInView={{opacity: 100}} viewport={{once: true}}  className='h-fit md:h-full flex flex-col justify-center md:justify-start col-span-1 items-start md:items-start md:col-span-4 py-5 md:p-16'>
@@ -35,7 +35,7 @@ const Blogs = () => {
                 <img src={Sky} className='object-contain object-center h-full w-full hover:grayscale-0 grayscale' />
             </div>  
         </div>
-    </div>
+    </section>
   )
 }
 

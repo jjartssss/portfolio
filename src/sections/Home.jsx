@@ -7,7 +7,7 @@ const Home = () => {
     
 
   return (
-    <div className='flex flex-col items-center justify-center w-full h-auto pt-32 py-10 md:py-32 bg-slate-50'>
+    <section id="home" className='flex flex-col items-center justify-center w-full h-auto pt-32 py-10 md:py-32 bg-slate-50'>
         <div className='grid grid-cols-1 md:grid-cols-2 3xl:w-[1500px]'>
             {/* Image  */}
             <div className='flex justify-start items-center '>
@@ -28,7 +28,7 @@ const Home = () => {
                 <img src={Glors} className='relative w-[32rem]' />
             </motion.div>
         </div>
-    </div>
+    </section>
   )
 }
 
