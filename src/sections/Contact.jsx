@@ -4,7 +4,33 @@ import Julieta from '../assets/imgs/contact_image1.png'
 import {AnimatePresence, motion} from 'framer-motion'
 import { v4 as uuidv4 } from 'uuid';
 
+const ThankyouCard = ({handlePopup}) => {
+  return (
+    // black bg 
+    <div className='fixed flex justify-center items-center w-full h-screen bg-black bg-opacity-70 top-0 left-0 z-50'>
+        <div className='w-full h-screen flex flex-col justify-center items-center'>
+          {/* <img src={Thankyou} alt="" className='z-50 grayscale dark:grayscale-0 w-[20%] min-w-[300px]' /> */}
+          <div className='relative flex flex-col justify-center items-center  
+                          w-[100%] p-5 -mt-20
+                          md:w-[70%] md:min-w-[500px] h-[40%] bg-jt-primary-white 
+                        dark:bg-jt-dark-primary-dark
+                          max-w-[1000px] md:p-10'>
+              {/* <IoIosClose onClick={() => handlePopup()} className='absolute right-1 top-[0px] drop-icon'/> */}
+              {/* <h3>OTHER PROJECTS</h3> */}
+              <p className='text-center my-10 text-lg'>Thank You for Your Interest! <br />
+              I appreciate your interest in working with me! I'll be in touch shortly. <br />
+              Best regards, <br />
+              Talla, Jay Ray N.</p>
+              <button onClick={() => handlePopup()} className='glitchhover dark:text-jt-txt-neon-green max-w-[200px] dark:border-b-jt-txt-neon-green btn-cartoon mt-5'>CLOSE</button>
+          </div>
+        </div>
+    </div>
+  )
+}
+
+
 const Contact = () => {
+    
   return (
     <section id='contact' className='overflow-hidden flex md:flex-col items-center justify-center w-full h-fit py-10 md:py-16 bg-slate-50'>
         <div className='justify-center flex flex-col md:flex-row w-full h-fit md:h-full 5xl:w-[1950px]'>

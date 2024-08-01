@@ -9,9 +9,11 @@ const Navigation = () => {
   return (
     <div className='absolute flex justify-center w-full h-auto p-5'>
       <div className='flex justify-between items-center w-[1250px]'>
-        <p className='amatic-sc-regular txt-60'>
-          JJARTS
-        </p>
+        <Link to="home" smooth={true} duration={500}>
+          <p className='amatic-sc-regular txt-60'>
+            JJARTS
+          </p>
+        </Link>
 
         <ul className='hidden md:flex justify-center items-center gap-x-5'>
           <Link to="home" smooth={true} duration={500}><li className='cursor-pointer amatic-sc-regular txt-32'>Home</li></Link>
